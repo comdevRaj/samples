@@ -1,0 +1,191 @@
+.slideToTop{
+	-webkit-animation: translate-title .4s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title .4s linear;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes translate-title {
+    0% {
+        
+        top: 40%;
+        opacity:1 
+    }
+    100% {
+        bottom: default;
+        top: 12%;
+        z-index: 1000000;
+        opacity: 1;
+       
+    }
+}
+
+
+   
+.signOnAnimation{
+    -webkit-animation: translate-form .4s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title .4s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.2s;
+   	animation-delay: 0.2s;
+}
+
+.slideToDown{
+    -webkit-animation: translate-title-down .4s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title-down .4s linear;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes translate-title-down {
+    0% {
+      
+        top: 0%;
+        z-index: 1000000;
+        opacity: 1;
+        
+    }
+    100% {
+       top: 100%;
+        opacity:1 
+            
+            
+    }
+}
+
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform:translate3d(-20%,0,0);
+    transform: translate3d(-20%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideRightParent {
+    -webkit-animation-name: slideRight; 
+    animation-name: slideRight;
+    -webkit-animation-duration: .25s;
+    animation-duration: .25s;
+     -webkit-animation-fill-mode: forwards;
+     -webkit-backface-visibility: hidden;
+     -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform:translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+     -webkit-transform:translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+  }
+}
+
+.slideLeftParent {
+-webkit-animation-name: slideLeft; 
+  animation-name: slideLeft;
+-webkit-animation-duration: .45s;
+animation-duration: .45s;
+ -webkit-animation-fill-mode: forwards;
+ -webkit-backface-visibility: hidden;
+ -webkit-transition-timing-function: ease-in;
+ transition-timing-function: ease-in;
+
+}
+
+.translateRightHundred{
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transition-duration: 0.45s;
+    transition-duration: 0.45s;
+    -webkit-transition-timing-function: ease;
+    
+    -webkit-transform-style: preserve-3d; 
+    -webkit-backface-visibility: hidden; 
+    transition-timing-function: ease;
+}
+
+.w3-container:after,.w3-panel:after,.w3-row:after,.w3-row-padding:after,.w3-topnav:after,.w3-clear:after,.w3-btn-group:before,.w3-btn-group:after,.w3-btn-bar:before,.w3-btn-bar:after
+{content:"";display:table;clear:both}
+.w3-container{padding:0.01em 16px}
+.w3-center{text-align:center!important}
+w3-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{-webkit-animation:opac 0.8s;animation:opac 0.8s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;-webkit-animation:animatetop 0.5s;animation:animatetop 0.5s}
+@-webkit-keyframes animatetop{from{top:-10px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-10px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
+@-webkit-keyframes animateleft{from{left:-100px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-100px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
+@-webkit-keyframes animateright{from{right:-100px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-100px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
+@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.slideUpOfflineMessage{
+  -webkit-animation: translate-title-offline-message .3s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title-offline-message .3s linear;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes translate-title-offline-message {
+    0% {
+        
+        /*top: 93.3%;*/
+        bottom: 0px;
+        opacity:1 
+    }
+    100% {
+        bottom: 21px;
+        /*top: 90%;*/
+        z-index: 1000000;
+        opacity: 1;
+       
+    }
+}
+
+.slideToDownOfflineMessage{
+    -webkit-animation: translate-title-down-offline-message .3s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title-down-offline-message .3s linear;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes translate-title-down-offline-message {
+    0% {
+      
+        /*top: 90.3%;*/
+        bottom: 21px;
+        z-index: 1000000;
+        opacity: 1;
+        
+    }
+    100% {
+      /* top: 93.3%;*/
+      bottom: 0px;
+        opacity:1 
+            
+            
+    }
+}

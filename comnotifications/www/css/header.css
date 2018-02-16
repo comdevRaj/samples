@@ -1,0 +1,82 @@
+.header {
+    /*background: #1D2F43;*/
+    height: 64px;
+    display: table;
+    font-family: "xfinitysansRegular";
+    font-size: 22px;
+    width: 100%;
+    color: #A0A0A0;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #A0A0A0;
+    border-bottom-style: solid;
+}
+
+.header .back-btn {
+    position: absolute;
+    top:23px;
+    left:15px;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.header .back-icon{
+/*    background-image: url(../img/back-btn.svg);*/
+    background-image: url(../img/Icon-left-arrow.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 22px;
+    background-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+
+}
+
+.header .notification-btn {
+    position: absolute;
+    top:23px;
+    left:15px;
+    line-height: 24px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.header .notification-icon{
+/*    background-image: url(../img/back-btn.svg);*/
+    background-image: url(../img/notifications.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    transform: scale(0.9);
+
+}
+
+.header .header-title {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.header .search-icon {
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 22px;
+    background-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    line-height: 22px;
+    padding: 15px;
+    border: none;
+
+}

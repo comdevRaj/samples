@@ -1,0 +1,38 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "cordova-plugin-ms-azure-mobile-apps": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "kunder-cordova-plugin-webview": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "cordova-plugin-themeablebrowser": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "phonegap-plugin-push": {
+      "FCM_VERSION": "11.6.2",
+      "PACKAGE_NAME": "com.notifications.comcast"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.notifications.comcast"
+    }
+  }
+}

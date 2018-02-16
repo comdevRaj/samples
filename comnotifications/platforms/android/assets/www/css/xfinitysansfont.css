@@ -1,0 +1,28 @@
+@font-face{
+  font-family: "xfinitysansRegular";
+  src: url(../fonts/XFINITYSans-Reg.otf);
+}
+@font-face{
+  font-family: "xfinitysansBold";
+  src: url(../fonts/XFINITYSans-Bold.otf);
+}
+@font-face{
+  font-family: "xfinitysansBoldCond";
+  src: url(../fonts/XFINITYSans-BoldCond.otf);
+}
+@font-face{
+  font-family: "xfinitysansExtraLight";
+  src: url(../fonts/XFINITYSans-ExLgt.otf);
+}
+@font-face{
+  font-family: "xfinitysansLight";
+  src: url(../fonts/XFINITYSans-Lgt.otf);
+}
+@font-face{
+  font-family: "xfinitysansMedium";
+  src: url(../fonts/XFINITYSans-Med.otf);
+}
+@font-face{
+  font-family: "xfinitysansThin";
+  src: url(../fonts/XFINITYSans-Thin.otf);
+}

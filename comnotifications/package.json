@@ -1,0 +1,43 @@
+{
+  "name": "com.notifications.comcast",
+  "displayName": "comcast",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-inappbrowser": "^1.5.0",
+    "cordova-plugin-ms-azure-mobile-apps": "^2.0.0",
+    "cordova-plugin-themeablebrowser": "^0.2.17",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-sqlite-storage": "^1.4.8",
+    "kunder-cordova-plugin-webview": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+    "phonegap-plugin-push": "^2.1.3",
+    "pushplugin": "file:PushPlugin-master"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-ms-azure-mobile-apps": {},
+      "kunder-cordova-plugin-webview": {},
+      "cordova-plugin-themeablebrowser": {},
+      "phonegap-plugin-push": {
+        "FCM_VERSION": "11.6.2"
+      }
+    },
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ]
+  }
+}

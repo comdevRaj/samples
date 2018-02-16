@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/kunder-lab/cl.kunder.webview.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/kunder-lab/cl.kunder.webview.git",
+        "spec": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:kunder-lab/cl.kunder.webview.git",
+          "sshUrl": "git+ssh://git@github.com/kunder-lab/cl.kunder.webview.git",
+          "httpsUrl": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+          "gitUrl": "git://github.com/kunder-lab/cl.kunder.webview.git",
+          "shortcut": "github:kunder-lab/cl.kunder.webview",
+          "directUrl": "https://raw.githubusercontent.com/kunder-lab/cl.kunder.webview/master/package.json"
+        }
+      },
+      "/Users/Hub2u/Desktop/mobile apps/comnotifications"
+    ]
+  ],
+  "_from": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+  "_id": "kunder-cordova-plugin-webview@2.6.0",
+  "_inCache": true,
+  "_location": "/kunder-cordova-plugin-webview",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/kunder-lab/cl.kunder.webview.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/kunder-lab/cl.kunder.webview.git",
+    "spec": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:kunder-lab/cl.kunder.webview.git",
+      "sshUrl": "git+ssh://git@github.com/kunder-lab/cl.kunder.webview.git",
+      "httpsUrl": "git+https://github.com/kunder-lab/cl.kunder.webview.git",
+      "gitUrl": "git://github.com/kunder-lab/cl.kunder.webview.git",
+      "shortcut": "github:kunder-lab/cl.kunder.webview",
+      "directUrl": "https://raw.githubusercontent.com/kunder-lab/cl.kunder.webview/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/kunder-lab/cl.kunder.webview.git#f11dbfe197da5cce1e02f223847c883aecdc86fa",
+  "_shasum": "a6ed4cb3fda370193d868bf53268b68afcfd809b",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/kunder-lab/cl.kunder.webview.git",
+  "_where": "/Users/Hub2u/Desktop/mobile apps/comnotifications",
+  "author": {
+    "name": "kunder"
+  },
+  "bugs": {
+    "url": "https://github.com/kunder-lab/cl.kunder.webview/issues"
+  },
+  "cordova": {
+    "id": "kunder-cordova-plugin-webview",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "This cordova plugin enables you to open a second webview in your app. This webview is totally independent from the main webview, but allows you tu access plugins and other Cordova resources. It's possible to modify this plugin to allow multiple webviews.",
+  "devDependencies": {},
+  "gitHead": "f11dbfe197da5cce1e02f223847c883aecdc86fa",
+  "homepage": "https://github.com/kunder-lab/cl.kunder.webview#readme",
+  "keywords": [
+    "cordova",
+    "cordova-plugin",
+    "webview",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "name": "kunder-cordova-plugin-webview",
+  "optionalDependencies": {},
+  "readme": "<!---\nlicense: Licensed to the Apache Software Foundation (ASF) under one\nor more contributor license agreements.  See the NOTICE file\ndistributed with this work for additional information\nregarding copyright ownership.  The ASF licenses this file\nto you under the Apache License, Version 2.0 (the\n\"License\"); you may not use this file except in compliance\nwith the License.  You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing,\nsoftware distributed under the License is distributed on an\n\"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\nKIND, either express or implied.  See the License for the\nspecific language governing permissions and limitations\nunder the License.\n-->\n\n# kunder-cordova-plugin-webview\nThis cordova plugin enables you to open a second webview in your app.\nThis webview is totally independent from the main webview, but allows you tu access plugins and other Cordova resources.\n\nIt's possible to modify this plugin to allow multiple webviews.\n\nReport issues on [github issue tracker](https://github.com/kunder-lab/cl.kunder.webview/issues)\n\n## Installation\n```\n    cordova plugin add https://github.com/kunder-lab/cl.kunder.webview.git\n```\n\n## Supported Platforms\n- Android\n- iOS\n\n\n## Quick Start\n\nTo open a new webview, just call in your app's js:\n```javascript\n    webview.Show(URL);\n```\n\nWhere `URL` is the path to the page to be opened. In Android, the plugin automatically adds the prefix `file:///android_asset/www/`\nBut only if no `*://` or `javascript:` is present at the front of the URL.\n\nThen, to close the second webview and return to the main view, call in your second webview (the opened webview, not the main webview):\n```javascript\n    webview.Close();\n```\n\nThis will close and destroy the second webview.\n\n# webView\n\nThe `webView`object provides a way to manage a second webview inside your cordova app. This could be usefull if you want to open a second page as a popup or you want to load new content that is totally unrelated to the main view, but still have the ability to use cordova plugins.\n\nThe main difference with inAppBrowser plugin is that cl.kunder.webview plugin can access and use all cordova plguins installed in your app.\n\n## Methods\n\n- __Show__: Opens a new webView \n- __Close__: Close and destroy the webView\n- __Hide__: Same as __Close__\n- __SubscribeCallback__: Suscribes a callback that is fired when webView is closed\n\n### Show\n__Parameters__:\n- __url__: The url to be opened. In Android, if the url does not contain a protocol prefix (`*://` or `javascript:*`), the prefix `file:///android_asset/www/` will be automatically added. _(String)_\n- __successCallback__: Is triggered when the plugin is succesfully called. _(Function)_\n- __errorCallback__: Is triggered when the plugin fails to be called or is called with error. _(Function)_\n- __loading__: Should show a loading dialog while webview is loading. _(Boolean optional)_\n\n### SubscribeCallback\nSuscribes a callback that is triggered when a webView is closed.\n\n__Parameters__:\n- __successCallback__: The callback that will be called when a webview is closed. It contains an array of parameteres given by the Close/Hide method called in the child webview. _(Function)_\n- __errorCallback__: Is triggered when the plugin fails to be called or is called with error. _(Function)_\n\n#### Usage\n```js\n// Main webview\n// This will be fired on second webview close\nwebview.SubscribeCallback(function(params) { console.log(params); }, function(){ console.log('error'); })\n``` \n\n### Close/Hide\n__Parameters__:\n- __successCallback__: Is triggered when the plugin is succesfully called. _(Function)_\n- __errorCallback__: Is triggered when the plugin fails to be called or is called with error. _(Function)_\n- __params__: Parameterers that want to be delivered to the parent webview through the SubscribeCallback method. _(Array)_\n\n### HideLoading\nClose the loading shown by Show method.\n\n__Parameters__:\n- __successCallback__: The callback that will be called when the loading is closed. _(Function optional)_\n- __errorCallback__: Is triggered when the plugin fails to be called or is called with error. _(Function optional)_\n\n### SubscribeExitCallback (Android only)\nSubscribes an exit callback that is triggered when ExitApp method is called.\n\n__Parameters__:\n- __successCallback__: The callback that will be called when a webview is closed. _(Function)_\n- __errorCallback__: Is triggered when the plugin fails to be called or is called with error. This can be empty function _(Function)_\n\n### ExitApp (Android)\nThis method execute the subscribed exit callback if exist. Then close the webview.\nThis method is usefull when onResume event is defined in your main app. You should set a flag in subscribeExitCallback success method. Then in onResume event you should verify the flag value. Finally the main app should call ionic.Platform.exitApp() method to close the app.\n\n### ExitApp (iOS)\nThis method execute objective-C exit(0) method.\n\n### SetWebViewBehavior (iOS)\nThis method adjust the size of the current webview using the iOS 11 status bar space. This method should be called at the beginning of the app.\nNo parameters required.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunder-lab/cl.kunder.webview.git"
+  },
+  "version": "2.6.0"
+}
